@@ -1,4 +1,4 @@
-package database
+package main
 
 import (
 	"fmt"
@@ -23,5 +23,6 @@ func ConnectDB() error {
 	}
 
 	DB = db
+	fmt.Println("Database connection established successfully.")
 	return nil
 }
